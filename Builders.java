@@ -69,7 +69,7 @@ public class Main {
 //        map.put("keyTwo", 30);
 //        map.put("KeyThree", 20);
 //
-//        IndexRequest indexRequest = new IndexRequest("sampleindex");
+//  //      IndexRequest indexRequest = new IndexRequest("sampleindex");
 //        indexRequest.id("002");
 //        indexRequest.source(map);
 //        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
