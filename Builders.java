@@ -126,7 +126,7 @@ public class Main {
 //             System.out.println(i);
 //         }
 
-        //.   BoolQueryBuilder
+     //////   //.   BoolQueryBuilder
         
  
         SearchRequest searchRequest = new SearchRequest("kibana_sample_data_ecommerce");
