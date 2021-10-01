@@ -114,7 +114,7 @@ public class Main {
                 r.close();
             }
         } catch (IOException e) {
-            System.out.println("Error reading parquet file.");
+            System.out.println("Error reading in the parquet file.");
             e.printStackTrace();
         }
     }
