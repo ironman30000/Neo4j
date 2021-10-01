@@ -19,7 +19,7 @@ public class logic {
             String ff = formula.toString();
             String ff1 =nnf.toString();
             String ff2= cnf.toString();
-            System.out.print(temp  + "       " + ff + "    "+ ff1 + "   " + ff2 + "   ");
+            System.out.print(temp  + "       " + ff + "    "+ ff1 + "     " + ff2 + "   ");
 
 
             System.out.println();
