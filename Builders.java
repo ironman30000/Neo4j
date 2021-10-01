@@ -79,7 +79,7 @@ public class Main {
 //        EmployeePojo emp = new EmployeePojo("Elon", "Musk");
 //        ObjectMapper obj =new ObjectMapper();
      //   String s=obj.writerWithDefaultPrettyPrinter().writeValueAsString(emp);
-    //    System.out.println(s);
+  //  //    System.out.println(s);
 
 
 //        IndexRequest indexRequest = new IndexRequest("sampleindex");
