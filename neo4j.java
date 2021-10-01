@@ -17,7 +17,7 @@ import org.neo4j.driver.*;
 import static org.neo4j.driver.Values.parameters;
 
 public class Main {
-    // class to ingest data in neo4j
+ //   // class to ingest data in neo4j
     public static class DataIngester implements AutoCloseable
     {
         private final Driver driver;
