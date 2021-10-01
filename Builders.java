@@ -82,12 +82,12 @@ public class Main {
    //    System.out.println(s);
 
 
-//        IndexRequest indexRequest = new IndexRequest("sampleindex");
-//        indexRequest.id("003");
-//        indexRequest.source(new ObjectMapper().writeValueAsString(emp), XContentType.JSON);
-//        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
-//        System.out.println("response id: "+indexResponse.getId());
-//        System.out.println("response name: "+indexResponse.getResult().name());
+       IndexRequest indexRequest = new IndexRequest("sampleindex");
+       indexRequest.id("003");
+       indexRequest.source(new ObjectMapper().writeValueAsString(emp), XContentType.JSON);
+       IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
+       System.out.println("response id: "+indexResponse.getId());
+       System.out.println("response name: "+indexResponse.getResult().name());
 
       
            //.  matchquerybuilder
