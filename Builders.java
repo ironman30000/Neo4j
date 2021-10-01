@@ -79,7 +79,7 @@ public class Main {
 //        EmployeePojo emp = new EmployeePojo("Elon", "Musk");
 //        ObjectMapper obj =new ObjectMapper();
      //   String s=obj.writerWithDefaultPrettyPrinter().writeValueAsString(emp);
-    //    System.out.println(s);
+  //  //    System.out.println(s);
 
 
 //        IndexRequest indexRequest = new IndexRequest("sampleindex");
@@ -126,7 +126,7 @@ public class Main {
 //             System.out.println(i);
 //         }
 
-        //.   BoolQueryBuilder
+     //////   //.   BoolQueryBuilder
         
  
         SearchRequest searchRequest = new SearchRequest("kibana_sample_data_ecommerce");
