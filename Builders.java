@@ -52,34 +52,34 @@ public class Main {
         RestHighLevelClient client = new RestHighLevelClient(
                 RestClient.builder(new HttpHost("localhost", 9200, "http")));
 
-//        CreateIndexRequest request = new CreateIndexRequest("sampleindex");
-//        request.settings(Settings.builder().put("index.number_of_shards", 1).put("index.number_of_replicas", 2));
-//        CreateIndexResponse createIndexResponse = client.indices().create(request, RequestOptions.DEFAULT);
-//        System.out.println("response id: " + createIndexResponse.index());
+       CreateIndexRequest request = new CreateIndexRequest("sampleindex");
+       request.settings(Settings.builder().put("index.number_of_shards", 1).put("index.number_of_replicas", 2));
+       CreateIndexResponse createIndexResponse = client.indices().create(request, RequestOptions.DEFAULT);
+       System.out.println("response id: " + createIndexResponse.index());
 
-//        IndexRequest indexRequest = new IndexRequest("sampleindex");
-//        indexRequest.id("001");
-//        indexRequest.source("SampleKey","SampleValue");
-//        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
-//        System.out.println("response id: "+indexResponse.getId());
-//        System.out.println("response name: "+indexResponse.getResult().name());
+       IndexRequest indexRequest = new IndexRequest("sampleindex");
+       indexRequest.id("001");
+       indexRequest.source("SampleKey","SampleValue");
+       IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
+       System.out.println("response id: "+indexResponse.getId());
+       System.out.println("response name: "+indexResponse.getResult().name());
 
-//        HashMap<String, Integer> map = new HashMap<String, Integer>();
-//        map.put("keyOne", 10);
-//        map.put("keyTwo", 30);
-//        map.put("KeyThree", 20);
-//
-//  //      IndexRequest indexRequest = new IndexRequest("sampleindex");
-//        indexRequest.id("002");
-//        indexRequest.source(map);
-//        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
-//        System.out.println("response id: "+indexResponse.getId());
-//        System.out.println("response name: "+indexResponse.getResult().name());
+       HashMap<String, Integer> map = new HashMap<String, Integer>();
+       map.put("keyOne", 10);
+       map.put("keyTwo", 30);
+       map.put("KeyThree", 20);
 
-//        EmployeePojo emp = new EmployeePojo("Elon", "Musk");
-//        ObjectMapper obj =new ObjectMapper();
-     //   String s=obj.writerWithDefaultPrettyPrinter().writeValueAsString(emp);
-  //  //    System.out.println(s);
+ //      IndexRequest indexRequest = new IndexRequest("sampleindex");
+       indexRequest.id("002");
+       indexRequest.source(map);
+       IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
+       System.out.println("response id: "+indexResponse.getId());
+       System.out.println("response name: "+indexResponse.getResult().name());
+
+       EmployeePojo emp = new EmployeePojo("Elon", "Musk");
+       ObjectMapper obj =new ObjectMapper();
+       String s=obj.writerWithDefaultPrettyPrinter().writeValueAsString(emp);
+   //    System.out.println(s);
 
 
 //        IndexRequest indexRequest = new IndexRequest("sampleindex");
