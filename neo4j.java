@@ -70,18 +70,18 @@ public class Main {
         i++;
         System.out.println(i);
 
-//        for (int field = 0; field < fieldCount; field++) {
-//            var valueCount = g.getFieldRepetitionCount(field);
-//
-//            Type fieldType = g.getType().getType(field);
-//            String fieldName = fieldType.getName();
-//
-//            for (int index = 0; index < valueCount; index++) {
-//                if (fieldType.isPrimitive()) {
-//                    System.out.println(fieldName + " " + g.getValueToString(field, index));
-//                }
-//            }
-//        }
+       for (int field = 0; field < fieldCount; field++) {
+           var valueCount = g.getFieldRepetitionCount(field);
+
+           Type fieldType = g.getType().getType(field);
+           String fieldName = fieldType.getName();
+
+           for (int index = 0; index < valueCount; index++) {
+               if (fieldType.isPrimitive()) {
+                   System.out.println(fieldName + " " + g.getValueToString(field, index));
+               }
+           }
+       }
 
     }
 
