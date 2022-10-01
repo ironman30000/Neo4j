@@ -33,6 +33,7 @@ import org.logicng.formulas.FormulaFactory;
 import org.logicng.io.parsers.ParserException;
 import org.logicng.io.parsers.PropositionalParser;
 
+
 import javax.json.JsonObject;
 import javax.json.stream.JsonParser;
 import java.net.URI;
@@ -92,39 +93,39 @@ public class Main {
       
            //.  matchquerybuilder
 
-//         SearchRequest searchRequest = new SearchRequest("kibana_sample_data_ecommerce");
-//         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-//         searchSourceBuilder.query(QueryBuilders.matchAllQuery());
-//         searchRequest.source(searchSourceBuilder);
-//         SearchResponse response = client.search(searchRequest,RequestOptions.DEFAULT);
-//         System.out.println(response.status().getStatus());
-//         System.out.println(response.getHits());
-//         SearchHits hits = response.getHits();
-//         SearchHit[] searchHits = hits.getHits();
-//         for(SearchHit i : searchHits ){
-//             System.out.println(i);
-//         }
+        SearchRequest searchRequest = new SearchRequest("kibana_sample_data_ecommerce");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query(QueryBuilders.matchAllQuery());
+        searchRequest.source(searchSourceBuilder);
+        SearchResponse response = client.search(searchRequest,RequestOptions.DEFAULT);
+        System.out.println(response.status().getStatus());
+        System.out.println(response.getHits());
+        SearchHits hits = response.getHits();
+        SearchHit[] searchHits = hits.getHits();
+        for(SearchHit i : searchHits ){
+            System.out.println(i);
+        }
 
         
             //.  termquerybuilder 
           
-//         SearchRequest searchRequest = new SearchRequest("kibana_sample_data_ecommerce");
-//         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-//         searchSourceBuilder.query(QueryBuilders.termQuery("day_of_week","Wednesday"));
-//         searchSourceBuilder.sort(new FieldSortBuilder("products.base_price").order(SortOrder.ASC));
-//         searchRequest.source(searchSourceBuilder);
+        SearchRequest searchRequest = new SearchRequest("kibana_sample_data_ecommerce");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query(QueryBuilders.termQuery("day_of_week","Wednesday"));
+        searchSourceBuilder.sort(new FieldSortBuilder("products.base_price").order(SortOrder.ASC));
+        searchRequest.source(searchSourceBuilder);
 
-//         SearchResponse response = client.search(searchRequest,RequestOptions.DEFAULT);
-//         System.out.println(response.status().getStatus());
-//         System.out.println(response.getHits());
+        SearchResponse response = client.search(searchRequest,RequestOptions.DEFAULT);
+        System.out.println(response.status().getStatus());
+        System.out.println(response.getHits());
 
-//         SearchHits hits = response.getHits();
-//         SearchHit[] searchHits = hits.getHits();
+        SearchHits hits = response.getHits();
+        SearchHit[] searchHits = hits.getHits();
 
-//         System.out.println(searchHits.length);
-//         for(SearchHit i : searchHits ){
-//             System.out.println(i);
-//         }
+        System.out.println(searchHits.length);
+        for(SearchHit i : searchHits ){
+            System.out.println(i);
+        }
 
      //////   //.   BoolQueryBuilder
         
@@ -147,6 +148,9 @@ public class Main {
             System.out.println(i);
         }
 
+        
+        
+        
 
     }
 
