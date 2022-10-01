@@ -11,13 +11,20 @@ public class logic {
         for(String temp : string)
         {
             final FormulaFactory f= new FormulaFactory();
+            
             final PropositionalParser p = new PropositionalParser(f);
+            
             final Formula formula = p.parse(temp);
+            
             final Formula nnf = formula.nnf();
+            
             final Formula cnf = formula.cnf();
 
             String ff = formula.toString();
+            
+            
             String ff1 =nnf.toString();
+            
             String ff2= cnf.toString();
             System.out.print(temp  + "                " + ff + "           "+ ff1 + "            " + ff2 + "   ");
 
